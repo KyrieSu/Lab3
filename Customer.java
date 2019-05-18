@@ -3,12 +3,11 @@ import java.util.Vector;
 public class Customer {
     private String name;
     private double bonus;
-    private Vector<Record> db;
+    private Vector<Record> db = DataBase.getInstance();
 
     public Customer(String s){
         setName(s);
         bonus = 0.0;
-        db = Adapter.getInstance();
     }
 
     public void BorrowDVD(DVD d,int days){

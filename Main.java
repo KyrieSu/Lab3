@@ -1,10 +1,8 @@
-import java.util.Vector;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        Adapter mock = new Adapter();
+        DataBase mock = new DataBase();
 
         Customer April = new Customer("April");
         Customer Joe = new Customer("Joe");
